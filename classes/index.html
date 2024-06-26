@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta Bancária</title>
+</head>
+<body>
+  <h1>Conta Bancária</h1>
+  <form id="form-deposito">
+    <label for="valor-deposito">Valor do depósito:</label>
+    <input type="number" id="valor-deposito" name="valor-deposito" step="0.01" required>
+    <button type="submit">Depositar</button>
+  </form>
+  <form id="form-saque">
+    <label for="valor-saque">Valor do saque:</label>
+    <input type="number" id="valor-saque" name="valor-saque" step="0.01" required>
+    <button type="submit">Sacar</button>
+  </form>
+  <p>Saldo: <span id="saldo"></span></p>
+  <h2>Histórico de transações</h2>
+  <ul id="historico"></ul>
+
+  <script src="ContaBancaria.js"></script>
+</body>
+</html
